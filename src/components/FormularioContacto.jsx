@@ -82,40 +82,32 @@ if (!form.nombre.trim()) {
   // Es async porque puede llamar a una función onAgregar que se comunique con la API
   
   const onSubmit = async (e) => {
-    
+  e.preventDefault();
   
-    // Evitamos que el formulario recargue la página por defecto
-    e.preventDefault();
+  // 1. Activa el estado de carga inmediatamente
+  setEnviando(true); 
 
-    const esValido = validarFormulario();
-    if(!esValido) return;
+  const esValido = validarFormulario();
+  if (!esValido) {
+    setEnviando(false); // Si hay error, liberamos el botón
+    return;
+  }
 
-    try{
-      setEnviando(true);
+  try {
+  // Solo para probar, pon esto antes del await onAgregar(form):
+   await new Promise(res => setTimeout(res, 1000));
 
-      await onAgregar(form);
+    await onAgregar(form);
 
-         await new Promise((resolve) => setTimeout(resolve, 1500));
 
-      // Llamada real a la función que agrega el contacto
-      await onAgregar(form);
-
-      setForm({
-        nombre:"",
-        telefono:"",
-        correo:"",
-        etiqueta:"",
-      })
-
-      setErrores({
-        nombre:"",
-        telefono:"",
-        correo:"",
-      })
-    } finally {
-      setEnviando(false);
-    }
-    };
+    // 2. Limpia el formulario
+    setForm({ nombre: "", telefono: "", correo: "", etiqueta: "" });
+    setErrores({ nombre: "", telefono: "", correo: "" });
+  } finally {
+    // 3. Pase lo que pase, el botón deja de decir "Guardando..."
+    setEnviando(false);
+  }
+};
 
   
   return (

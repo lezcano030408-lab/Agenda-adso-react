@@ -44,22 +44,26 @@ export default function App() {
   // Agregar contacto
   // ===============================
   const onAgregarContacto = async (nuevoContacto) => {
-    try {
-      setError("");
+  try {
+    setError("");
+    const creado = await crearContacto(nuevoContacto);
 
-      const creado = await crearContacto(nuevoContacto);
+    // EVITAR DUPLICADO:
+    setContactos((prev) => {
+      // Si el ID que devuelve la API ya está en mi lista, no lo agrego
+      const yaExiste = prev.some((c) => c.id === creado.id);
+      if (yaExiste) return prev; 
+      
+      // Si no existe, lo agrego normalmente
+      return [...prev, creado];
+    });
 
-      setContactos((prev) => [...prev, creado]);
-    } catch (error) {
-      console.error("Error al crear contacto:", error);
-
-      setError(
-        "No se pudo guardar el contacto. Verifica tu conexión o el estado del servidor e intenta nuevamente."
-      );
-
-      throw error;
-    }
-  };
+  } catch (error) {
+    console.error("Error al crear contacto:", error);
+    setError("No se pudo guardar el contacto.");
+    throw error;
+  }
+};
 
   // ===============================
   // Eliminar contacto
