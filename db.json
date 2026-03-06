@@ -1,39 +1,39 @@
 {
   "contactos": [
     {
-      "id": "9921",
-      "nombre": "Ana maria",
-      "telefono": "11",
-      "correo": "oscar43k45@gmail.com",
-      "etiqueta": "Estudiante"
+      "id": "799a",
+      "nombre": "Camila",
+      "telefono": "3233328409",
+      "correo": "carol@gmail.com",
+      "etiqueta": "Trabajadora"
     },
     {
-      "id": "b5dc",
-      "nombre": "Ana",
-      "telefono": "111233232",
-      "correo": "guarachero1228@gmail.com",
-      "etiqueta": "Estudiante"
+      "id": "d3c8",
+      "nombre": "Samanta",
+      "telefono": "3425564537",
+      "correo": "sam@gmail.com",
+      "etiqueta": ""
     },
     {
-      "id": "ca5d",
-      "nombre": "florencia",
-      "telefono": "3223846475",
-      "correo": "oscar43k45@gmail.com",
-      "etiqueta": "Estudiante"
+      "id": "1cf9",
+      "nombre": "Laura Gil Montoya",
+      "telefono": "3246757878",
+      "correo": "lurita_gil@gmail.com",
+      "etiqueta": "Novia de mi novio"
     },
     {
-      "id": "ee65",
-      "nombre": "Diana Lopez",
-      "telefono": "3223810232",
-      "correo": "diana@sena.edu.co",
-      "etiqueta": "Estudiante"
+      "id": "7a2a",
+      "nombre": "Lorena Padil",
+      "telefono": "3205674312",
+      "correo": "loreP@gmail.com",
+      "etiqueta": "Prima"
     },
     {
-      "id": "a5d7",
-      "nombre": "Anabel Torres",
-      "telefono": "122293232",
-      "correo": "Anabel@sena.edu.co",
-      "etiqueta": "Estudiante"
+      "id": "5ea7",
+      "nombre": "Manuela",
+      "telefono": "3505671245",
+      "correo": "manuuuu@gmail.com",
+      "etiqueta": "Tía materna "
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -110,7 +110,7 @@ export default function FormularioContacto({
           Nombre del contacto *
         </label>
         <input
-          className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
+                className="w-full md:flex-1 rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition"
           name="nombre"
           placeholder="Ej: Camila Pérez"
           value={form.nombre}
@@ -127,7 +127,7 @@ export default function FormularioContacto({
           Teléfono del contacto *
         </label>
         <input
-          className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
+                className="w-full md:flex-1 rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition"
           name="telefono"
           placeholder="Ej: 300 123 4567"
           value={form.telefono}
@@ -143,8 +143,9 @@ export default function FormularioContacto({
         <label className="block text-sm font-medium text-gray-700 mb-1">
           Correo del contacto *
         </label>
+
         <input
-          className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
+          className="w-full md:flex-1 rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition"
           name="correo"
           placeholder="Ej: camila@sena.edu.co"
           value={form.correo}
@@ -157,11 +158,13 @@ export default function FormularioContacto({
 
       {/* Etiqueta */}
       <div>
+
         <label className="block text-sm font-medium text-gray-700 mb-1">
           Añade una etiqueta contacto (opcional)
         </label>
+
         <input
-          className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
+          className="w-full md:flex-1 rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition"
           name="etiqueta"
           placeholder="Ej: Trabajo"
           value={form.etiqueta}
@@ -174,9 +177,7 @@ export default function FormularioContacto({
         <button
           type="submit"
           disabled={enviando}
-          className="w-full md:w-auto bg-purple-600 hover:bg-cyan-700
-                     disabled:bg-purple-300 disabled:cursor-not-allowed
-                     text-white px-6 py-3 rounded-xl font-semibold shadow-sm"
+          className="w-full md:w-auto bg-purple-600 hover:bg-cyan-700 disabled:bg-purple-300 disabled:cursor-not-allowed text-white px-6 py-3 rounded-xl font-semibold shadow-sm"
         >
           {enviando ? "Guardando..." : contactoEditar ? "Actualizar" : "Agregar contacto"}
         </button>
@@ -186,9 +187,7 @@ export default function FormularioContacto({
             type="button"
             onClick={onCancelarEdicion}
             className="w-full md:w-auto bg-gray-300 hover:bg-gray-400 text-gray-700 px-6 py-3 rounded-xl font-semibold shadow-sm"
-          >
-            Cancelar
-          </button>
+          >Cancelar</button>
         )}
       </div>
     </form>

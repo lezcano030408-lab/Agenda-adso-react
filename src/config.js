@@ -8,10 +8,10 @@ export const API_BASE_URL = "http://localhost:3002/contactos";
 // Información general de la aplicación que se utilizará en App.jsx
 export const APP_INFO = {
   // Número de ficha que se muestra en el encabezado
-  ficha: "3223876",
+  ficha: "3229207",
 
   // Título principal de la aplicación
-  titulo: "Agenda ADSO v7",
+  titulo: "Agenda ADSO v9",
 
   // Subtítulo o descripción corta que aparece debajo del título
   subtitulo:
