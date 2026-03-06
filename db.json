@@ -2,31 +2,38 @@
   "contactos": [
     {
       "id": "9921",
-      "nombre": "petro",
+      "nombre": "Ana maria",
       "telefono": "11",
       "correo": "oscar43k45@gmail.com",
-      "etiqueta": "Administrativo"
+      "etiqueta": "Estudiante"
     },
     {
       "id": "b5dc",
-      "nombre": "jbl692",
-      "telefono": "11",
+      "nombre": "Ana",
+      "telefono": "111233232",
       "correo": "guarachero1228@gmail.com",
-      "etiqueta": "Administrativo"
+      "etiqueta": "Estudiante"
     },
     {
-      "id": "35da",
-      "nombre": "hola",
-      "telefono": "323e3e",
-      "correo": "madurdo@.com",
-      "etiqueta": "rrr"
+      "id": "ca5d",
+      "nombre": "florencia",
+      "telefono": "3223846475",
+      "correo": "oscar43k45@gmail.com",
+      "etiqueta": "Estudiante"
     },
     {
-      "id": "3775",
-      "nombre": "hola",
-      "telefono": "323e3e",
-      "correo": "madurdo.com@",
-      "etiqueta": "amigoooooooo"
+      "id": "ee65",
+      "nombre": "Diana Lopez",
+      "telefono": "3223810232",
+      "correo": "diana@sena.edu.co",
+      "etiqueta": "Estudiante"
+    },
+    {
+      "id": "a5d7",
+      "nombre": "Anabel Torres",
+      "telefono": "122293232",
+      "correo": "Anabel@sena.edu.co",
+      "etiqueta": "Estudiante"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

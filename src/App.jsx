@@ -182,7 +182,7 @@ function App() {
             {/* Listado de contactos */}
             <section className="space-y-4">
               {contactosOrdenados.length === 0 ? (
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-cyan-500">
                   No se encontraron contactos que coincidan con la búsqueda.
                 </p>
               ) : (
