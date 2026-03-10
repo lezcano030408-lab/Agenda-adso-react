@@ -34,6 +34,13 @@
       "telefono": "3505671245",
       "correo": "manuuuu@gmail.com",
       "etiqueta": "Tía materna "
+    },
+    {
+      "id": "dbb7",
+      "nombre": "robben",
+      "telefono": "el mio",
+      "correo": "madurdo@com",
+      "etiqueta": "amigo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
