@@ -177,7 +177,7 @@ export default function FormularioContacto({
         <button
           type="submit"
           disabled={enviando}
-          className="w-full md:w-auto bg-purple-600 hover:bg-cyan-700 disabled:bg-purple-300 disabled:cursor-not-allowed text-white px-6 py-3 rounded-xl font-semibold shadow-sm"
+          className="w-full md:w-auto bg-blue-600 hover:bg-blue-800 disabled:bg-purple-300 disabled:cursor-not-allowed text-white px-6 py-3 rounded-xl font-semibold shadow-sm"
         >
           {enviando ? "Guardando..." : contactoEditar ? "Actualizar" : "Agregar contacto"}
         </button>

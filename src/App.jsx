@@ -168,22 +168,22 @@ return 0;
 
 });
 
-return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple-900 to-yellow-100">
-
-{/* HEADER SUPERIOR */}
-<header className="border-b border-white/20 backdrop-blur bg-red-50">
+return ( 
+<div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-800 to-slate-900">
+  {/* HEADER SUPERIOR */}
+<header className="border-b border-white/20 backdrop-blur bg-black/25">
   <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
     <div>
-      <p className="text-xs uppercase tracking-[0.3em] text-purple-800">
+      <p className="text-xs uppercase tracking-[0.3em] text-gray-50">
         Proyecto ABP
       </p>
-      <h1 className="text-lg font-semibold text-purple-800">
+      <h1 className="text-lg font-semibold text-gray-50">
         Agenda ADSO – ReactJS
       </h1>
     </div>
  
 
-      <p className="text-xs text-purple-800">
+      <p className="text-l text-gray-50">
         Ficha {APP_INFO.ficha}
       </p>
     </div>
@@ -196,11 +196,11 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
     <div>
 
       <header className="mb-8">
-        <h2 className="text-4xl font-extrabold text-red-100 mt-2">
+        <h2 className="text-4xl font-extrabold text-gray-100 mt-2">
           {APP_INFO.titulo}
         </h2>
 
-        <p className="text-sm text-red-100 mt-1">
+        <p className="text-4xl text-gray-100 mt-1">
           {APP_INFO.subtitulo}
         </p>
       </header>
@@ -210,7 +210,7 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
         {estaEnVistaCrear ? (
           <button
             onClick={irAVerContactos}
-            className="px-4 py-2 bg-purple-600 text-white rounded-lg"
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg"
           >
             Ver contactos
           </button>
@@ -226,7 +226,7 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
 
       {/* ERRORES */}
       {error && (
-        <div className="mb-4 rounded-xl bg-red-50 border border-red-200 px-4 py-3">
+        <div className="mb-4 rounded-xl bg-red-50 border border-red-100 px-4 py-3">
           <p className="text-sm font-medium text-red-700">{error}</p>
         </div>
       )}
@@ -308,7 +308,7 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
       )}
 
       {/* FOOTER */}
-      <footer className="mt-8 text-xs text-red-100">
+      <footer className="mt-8 text-xs text-gray-100">
         <p>Desarrollo Web – ReactJS | Proyecto Agenda ADSO</p>
         <p>Instructor: Gustavo Adolfo Bolaños Dorado</p>
         <p>
@@ -322,7 +322,7 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
     <aside className="space-y-4">
 
       {/* TARJETA DASHBOARD */}
-      <div className="rounded-3xl bg-gradient-to-br from-purple-600 to-purple-800 text-white p-6 shadow-xl">
+      <div className="rounded-3xl bg-gradient-to-brbackdrop-blur bg-black/25 text-white p-8 shadow-xl">
         <p className="text-xs uppercase tracking-[0.3em] text-purple-100/80">
           Proyecto ABP
         </p>
@@ -331,7 +331,7 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
           Agenda ADSO – Dashboard
         </h2>
 
-        <p className="text-sm text-purple-100 mt-2">
+        <p className="text-sm text-purple-100 mt-2 ">
           CRUD completo con React, JSON Server, búsqueda,
           ordenamiento y edición.
         </p>
@@ -342,12 +342,12 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
       </div>
 
       {/* TARJETA TIPS */}
-      <div className="rounded-2xl bg-white p-4 shadow-sm">
-        <h3 className="text-sm font-semibold text-gray-900">
+      <div className="rounded-2xl backdrop-blur bg-black/25 p-6 shadow-sm">
+        <h3 className="text-sm font-semibold text-gray-100">
           Tips de código limpio
         </h3>
 
-        <ul className="mt-2 text-xs text-gray-600 space-y-1">
+        <ul className="mt-2 text-xs text-gray-200 space-y-1">
           <li>• Componentes pequeños</li>
           <li>• Evita duplicar lógica</li>
           <li>• Usa nombres claros</li>
@@ -355,8 +355,8 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
       </div>
 
       {/* TARJETA SENA */}
-      <div className="rounded-2xl bg-slate-900 text-slate-100 p-4 shadow-sm">
-        <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+      <div className="rounded-2xl backdrop-blur bg-black/30 text-slate-100 p-6 shadow-sm">
+        <p className="text-xs uppercase tracking-[0.3em] text-slate-100">
           SENA CTMA
         </p>
 
@@ -364,7 +364,7 @@ return ( <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple
           Desarrollo Web – ReactJS
         </p>
 
-        <p className="text-xs text-slate-400 mt-2">
+        <p className="text-xs text-slate-100 mt-2">
           Proyecto Agenda ADSO para portafolio.
         </p>
       </div>

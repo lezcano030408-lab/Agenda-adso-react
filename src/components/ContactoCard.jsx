@@ -8,13 +8,13 @@ export default function ContactoCard({ nombre, telefono, correo, etiqueta, onEli
 
         {/* Teléfono */}
         <p className="text-gray-600 text-sm flex items-center gap-2">
-          <span className="text-purple-500 text-lg">📞</span>
+          <span className="text-blue-600 text-lg">📞</span>
           {telefono}
         </p>
 
         {/* Correo */}
         <p className="text-gray-600 text-sm flex items-center gap-2">
-          <span className="text-purple-500 text-lg">✉️</span>
+          <span className="text-blue-600 text-lg">✉️</span>
           {correo}
         </p>
 
@@ -30,7 +30,7 @@ export default function ContactoCard({ nombre, telefono, correo, etiqueta, onEli
       <div className="flex flex-col gap-2">
         <button
           onClick={onEditar}
-          className="bg-purple-700 hover:bg-cyan-700 text-white text-sm px-4 py-2 rounded-lg shadow transition"
+          className="bg-blue-600 hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg shadow transition"
           type="button"
         >
           Editar
@@ -38,7 +38,7 @@ export default function ContactoCard({ nombre, telefono, correo, etiqueta, onEli
 
         <button
           onClick={onEliminar}
-          className="bg-gray-500 hover:bg-red-600 text-white text-sm px-4 py-2 rounded-lg shadow transition"
+          className="bg-blue-400 hover:bg-red-600 text-white text-sm px-4 py-2 rounded-lg shadow transition"
           type="button"
         >
           Eliminar
